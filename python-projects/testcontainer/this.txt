@@ -1,0 +1,9 @@
+We generate a decryption key and print it. Note that in practice, you should securely save the decryption key because it's required to decrypt the files.
+
+We loop through the files in the current directory.
+
+If the file is named "test.py," we continue to the next iteration of the loop without attempting decryption on it.
+
+For all other files, we attempt to decrypt their contents using the provided key. If decryption is successful, we write the decrypted data back to the file.
+
+If decryption fails for any reason, we catch the exception and print an error message, indicating that the de
